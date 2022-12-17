@@ -3,6 +3,7 @@ import './style.css';
 import MyCountByState from './hooks/h1.state';
 import MyCountByReducer from './hooks/h2.reducer';
 import MyCountByEffect from './hooks/h3.effect';
+import MyCountByLayoutEffect from './hooks/h4.layoutEffect';
 
 import { Provider } from 'react-redux';
 import store from './react-redux/store';
@@ -25,6 +26,10 @@ export default function App() {
         <div>
           useEffect:
           <MyCountByEffect val={98} />
+        </div>
+        <div>
+          useLayoutEffect:
+          <MyCountByLayoutEffect val={98} />
         </div>
       </div>
       <h2>react-redux</h2>
